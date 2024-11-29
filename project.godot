@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+MusicManager="*res://Source/Globals/MusicManager.tscn"
 SceneManager="*res://Source/Globals/SceneManager.tscn"
 
 [file_customization]

@@ -1,0 +1,37 @@
+[gd_scene load_steps=11 format=3 uid="uid://wfdev3i6bc28"]
+
+[ext_resource type="Script" path="res://Source/Globals/MusicManager/MusicManager.gd" id="1_4d53r"]
+[ext_resource type="AudioStream" uid="uid://cyessycfmjmi0" path="res://Sound/BGM/Base.wav" id="2_5fdk3"]
+[ext_resource type="AudioStream" uid="uid://bkkk2bxvdykhu" path="res://Sound/BGM/Player.wav" id="3_vjmxn"]
+[ext_resource type="AudioStream" uid="uid://c53srejnetclk" path="res://Sound/BGM/Brioche.wav" id="3_wayr2"]
+[ext_resource type="AudioStream" uid="uid://daor58b2qkh8m" path="res://Sound/BGM/Edward.wav" id="4_4n5b3"]
+[ext_resource type="AudioStream" uid="uid://cx5fwtijr6awp" path="res://Sound/BGM/Kirpich.wav" id="4_uenno"]
+[ext_resource type="AudioStream" uid="uid://c01mn51pygr0r" path="res://Sound/BGM/Hector.wav" id="5_sjrxc"]
+[ext_resource type="AudioStream" uid="uid://oiqicamsoptx" path="res://Sound/BGM/Otis.wav" id="7_oubbf"]
+[ext_resource type="AudioStream" uid="uid://c48btyavc6dow" path="res://Sound/BGM/Pepe.wav" id="8_jr32q"]
+
+[sub_resource type="AudioStreamSynchronized" id="AudioStreamSynchronized_dq315"]
+stream_count = 8
+stream_0/stream = ExtResource("2_5fdk3")
+stream_0/volume = 0.0
+stream_1/stream = ExtResource("3_wayr2")
+stream_1/volume = 0.0
+stream_2/stream = ExtResource("4_4n5b3")
+stream_2/volume = 0.0
+stream_3/stream = ExtResource("5_sjrxc")
+stream_3/volume = 0.0
+stream_4/stream = ExtResource("4_uenno")
+stream_4/volume = 0.0
+stream_5/stream = ExtResource("7_oubbf")
+stream_5/volume = 0.0
+stream_6/stream = ExtResource("8_jr32q")
+stream_6/volume = 0.0
+stream_7/stream = ExtResource("3_vjmxn")
+stream_7/volume = 0.0
+
+[node name="MusicManager" type="Node"]
+script = ExtResource("1_4d53r")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamSynchronized_dq315")
