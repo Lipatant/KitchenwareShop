@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ba3l5upxan0bx"]
 
-[ext_resource type="Script" path="res://Source/SceneManager.gd" id="1_o1t0c"]
+[ext_resource type="Script" path="res://Source/Globals/SceneManager/SceneManager.gd" id="1_o1t0c"]
 
 [sub_resource type="Animation" id="Animation_v78qa"]
 resource_name = "FadeIn"
