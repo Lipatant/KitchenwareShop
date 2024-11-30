@@ -1,0 +1,14 @@
+[gd_scene load_steps=9 format=3 uid="uid://s7av3ful2wnf"]
+
+[ext_resource type="Script" path="res://Source/Globals/SaveManager/SaveManager.gd" id="1_8elts"]
+[ext_resource type="Script" path="res://Source/Data/Character.gd" id="2_epxwk"]
+[ext_resource type="Resource" uid="uid://dqxd0hqs06qo1" path="res://Data/Characters/Brioche.tres" id="3_rae83"]
+[ext_resource type="Resource" uid="uid://bbc0da5rmo1ra" path="res://Data/Characters/Edward.tres" id="4_uwwlc"]
+[ext_resource type="Resource" uid="uid://cif3bbu7tccwl" path="res://Data/Characters/Hector.tres" id="5_py0cn"]
+[ext_resource type="Resource" uid="uid://ddi5kg0d7wb1m" path="res://Data/Characters/Kirpich.tres" id="6_fea1o"]
+[ext_resource type="Resource" uid="uid://bmmucxvbxfjwn" path="res://Data/Characters/Otis.tres" id="7_oyode"]
+[ext_resource type="Resource" uid="uid://rlu4rta6ltb1" path="res://Data/Characters/Pepe.tres" id="8_meyvb"]
+
+[node name="CurrentSave" type="Node"]
+script = ExtResource("1_8elts")
+_character_resources = Array[ExtResource("2_epxwk")]([ExtResource("3_rae83"), ExtResource("4_uwwlc"), ExtResource("5_py0cn"), ExtResource("6_fea1o"), ExtResource("7_oyode"), ExtResource("8_meyvb")])
