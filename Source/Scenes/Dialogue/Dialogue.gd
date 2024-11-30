@@ -15,6 +15,7 @@ signal speech_pressed()
 
 func _ready() -> void:
 	set_character_name()
+	set_emotion()
 	play(SaveManager.current_event, SaveManager.current_character)
 
 func play(event: Event, character: Character = null) -> void:
@@ -55,13 +56,15 @@ func _play_line(line: String) -> bool:
 
 # EVENT FUNCTIONS #
 
-func say(speech_code: String) -> bool:
+func say(speech_code: String, emotion: String = "") -> bool:
 	var line : String = tr("CharacterSpeech" + speech_code)
 	var line_duration : float = 0.02 * line.length()
 	%CharacterSpeech.text = line
 	%CharacterSpeech.visible_characters = 0
 	_speech_tween = create_tween()
 	_speech_tween.tween_property(%CharacterSpeech, "visible_characters", line.length(), line_duration)
+	if emotion:
+		set_emotion(emotion)
 	return false
 
 func set_character_name(character_code: String = "") -> bool:
@@ -78,3 +81,14 @@ func set_character_name_self() -> bool:
 
 func set_character_name_unknown() -> bool:
 	return set_character_name("Unknown")
+
+func set_emotion(emotion: String = "") -> bool:
+	var emotion_formated : String = emotion.to_snake_case().to_upper()
+	var character_emotion := Character.Emotion.NEUTRAL
+	if emotion_formated:
+		assert(Character.Emotion.has(emotion_formated))
+		character_emotion = Character.Emotion.get(emotion_formated)
+	else:
+		emotion_formated = Character.Emotion.find_key(character_emotion)
+	%Emotion.text = emotion_formated
+	return true

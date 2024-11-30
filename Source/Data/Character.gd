@@ -7,3 +7,14 @@ class_name Character
 @export_subgroup("Events")
 @export var event_eliminated : Event
 @export var events : Array[Event]
+
+enum Emotion {
+	CRYING,
+	EMBARRASSED,
+	FOCUSED,
+	HAPPY,
+	NEUTRAL,
+	SAD,
+	SCARED,
+	TERRIFIED,
+}
