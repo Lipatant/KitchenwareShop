@@ -33,7 +33,7 @@ func play(stream: AudioStream = null) -> void:
 
 func stop() -> void:
 	if _current_stream_identifier > 0:
-		_audio_stream_synchronized.set_sync_stream_volume(_current_stream_identifier, 0.0)
+		_set_stream_volume(_current_stream_identifier, 0.0)
 		_current_stream_identifier = 0
 
 # PRIVATE METHODS #

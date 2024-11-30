@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://b1nldnorkv3ps"]
+[gd_scene load_steps=2 format=3 uid="uid://b1nldnorkv3ps"]
+
+[ext_resource type="Script" path="res://Source/Scenes/Dialogue/Dialogue.gd" id="1_22gd5"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -7,8 +9,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_22gd5")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="CharacterSpeechContainer" type="Panel" parent="."]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 1
 anchors_preset = 12
@@ -17,8 +20,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_default_cursor_shape = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CharacterSpeechContainer"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -27,17 +31,28 @@ grow_horizontal = 2
 grow_vertical = 2
 horizontal_scroll_mode = 0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel/ScrollContainer"]
+[node name="CharacterSpeech" type="RichTextLabel" parent="CharacterSpeechContainer/ScrollContainer"]
+unique_name_in_owner = true
+auto_translate_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 2
 text = "PLACEHOLDER"
 fit_content = true
 
-[node name="Panel" type="PanelContainer" parent="Panel"]
+[node name="CharacterNameContainer" type="PanelContainer" parent="CharacterSpeechContainer"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
+offset_left = 20.0
 grow_vertical = 0
 
-[node name="Label" type="Label" parent="Panel/Panel"]
+[node name="CharacterName" type="Label" parent="CharacterSpeechContainer/CharacterNameContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 text = "PLACEHOLDER"
+horizontal_alignment = 1
+
+[connection signal="speech_pressed" from="." to="." method="_on_speech_pressed"]
+[connection signal="gui_input" from="CharacterSpeechContainer" to="." method="_on_character_speech_container_gui_input"]

@@ -5,5 +5,12 @@ CharacterNameHector,Hector
 CharacterNameKirpich,Kirpich
 CharacterNameOtis,Otis
 CharacterNamePepe,Pepe
+CharacterNameUnknown,???
+CharacterSpeechEdward0101,"Who do I see there?"
+CharacterSpeechEdward0102,"..."
+CharacterSpeechEdward0103,"You're not from around here, are you?"
+CharacterSpeechEdward0104,"If you're looking for a new tool for preparing dishes fit for a queen, you've come to the right place."
+CharacterSpeechEdward0105,"Let me introduce myself: I'm Edward, proud descendant of my assortment of blades."
+CharacterSpeechEdward0106,"I'm going to have to leave you now, as it's almost time for me to go and cut some tea leaves in my department."
 MainMenuStartButton,Start
 MainMenuLeaveButton,Leave
