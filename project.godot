@@ -31,6 +31,10 @@ folder_colors={
 "res://Source/": "blue"
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://Localization/Localization.en.translation")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
