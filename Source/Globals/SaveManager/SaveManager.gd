@@ -5,6 +5,7 @@ extends Node
 @export var _character_resources : Array[Character]
 @export var _choice_resource : PackedScene
 @export var _dialogue_resource : PackedScene
+@export var _elimination_resource : PackedScene
 
 # MEMBERS #
 
@@ -24,7 +25,10 @@ func eliminate_character(character: Character) -> void:
 	start_next_day()
 
 func end_event() -> void:
-	pass
+	if characters_remaining.is_empty():
+		SceneManager.change_scene_to_packed(_elimination_resource)
+	else:
+		SceneManager.change_scene_to_packed(_choice_resource)
 
 func intertact_with_character(character: Character) -> void:
 	var current_day_index : int = current_day - 1

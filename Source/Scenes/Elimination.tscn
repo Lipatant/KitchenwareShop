@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://3876m577l7ii"]
+
+[ext_resource type="PackedScene" uid="uid://7e1xpiicaqv6" path="res://Source/Scenes/Choice.tscn" id="1_7rucl"]
+[ext_resource type="Script" path="res://Source/Scenes/Elimination/Elimination.gd" id="2_t21bs"]
+
+[node name="Elimination" instance=ExtResource("1_7rucl")]
+script = ExtResource("2_t21bs")
