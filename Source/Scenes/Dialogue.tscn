@@ -11,6 +11,28 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_22gd5")
 
+[node name="EmotionContainer" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -20.0
+offset_right = 75.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Emotion" type="Label" parent="EmotionContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "PLACEHOLDER"
+horizontal_alignment = 1
+
 [node name="CharacterSpeechContainer" type="Panel" parent="."]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 1
@@ -48,28 +70,6 @@ offset_left = 20.0
 grow_vertical = 0
 
 [node name="CharacterName" type="Label" parent="CharacterSpeechContainer/CharacterNameContainer"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(150, 0)
-layout_mode = 2
-text = "PLACEHOLDER"
-horizontal_alignment = 1
-
-[node name="EmotionContainer" type="PanelContainer" parent="."]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Emotion" type="Label" parent="EmotionContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
