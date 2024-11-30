@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://cif3bbu7tccwl"]
+
+[ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_afqg8"]
+[ext_resource type="AudioStream" uid="uid://c01mn51pygr0r" path="res://Sound/BGM/Hector.wav" id="2_m18ag"]
+
+[resource]
+script = ExtResource("1_afqg8")
+code = "Hector"
+theme = ExtResource("2_m18ag")

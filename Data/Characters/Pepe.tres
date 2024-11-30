@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://rlu4rta6ltb1"]
+
+[ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_6i7k1"]
+[ext_resource type="AudioStream" uid="uid://c48btyavc6dow" path="res://Sound/BGM/Pepe.wav" id="2_55ia6"]
+
+[resource]
+script = ExtResource("1_6i7k1")
+code = "Pepe"
+theme = ExtResource("2_55ia6")

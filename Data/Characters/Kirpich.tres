@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://ddi5kg0d7wb1m"]
+
+[ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_0tn3j"]
+[ext_resource type="AudioStream" uid="uid://cx5fwtijr6awp" path="res://Sound/BGM/Kirpich.wav" id="2_re5po"]
+
+[resource]
+script = ExtResource("1_0tn3j")
+code = "Kirpich"
+theme = ExtResource("2_re5po")

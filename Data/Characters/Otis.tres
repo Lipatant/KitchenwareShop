@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://bmmucxvbxfjwn"]
+
+[ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_rps71"]
+[ext_resource type="AudioStream" uid="uid://oiqicamsoptx" path="res://Sound/BGM/Otis.wav" id="2_548ui"]
+
+[resource]
+script = ExtResource("1_rps71")
+code = "Otis"
+theme = ExtResource("2_548ui")
