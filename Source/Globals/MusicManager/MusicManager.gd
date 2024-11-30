@@ -2,7 +2,7 @@ extends Node
 
 # MEMBERS #
 
-var volume_additional : float = 0.0 :
+var volume_additional : float = 1.0 :
 	set(volume_additional_):
 		volume_additional = volume_additional_
 		_refresh_volume_additional()
