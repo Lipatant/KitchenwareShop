@@ -62,7 +62,6 @@ func say(speech_code: String) -> bool:
 	%CharacterSpeech.visible_characters = 0
 	_speech_tween = create_tween()
 	_speech_tween.tween_property(%CharacterSpeech, "visible_characters", line.length(), line_duration)
-	#_speech_tween.tween_callback(_emit_speech_finished)
 	return false
 
 func set_character_name(character_code: String = "") -> bool:
