@@ -15,18 +15,19 @@ signal speech_pressed()
 
 func _ready() -> void:
 	set_character_name()
-	play(load("res://Data/Characters/Edward/EdwardDay01.tres"))
+	play(SaveManager.current_event, SaveManager.current_character)
 
-func play(event: Event) -> void:
+func play(event: Event, character: Character = null) -> void:
 	_lines = event.code.split("\n", false)
-	_character = event.character
+	_character = character
 	MusicManager.play(_character.theme)
 	play_next()
 
 func play_next() -> void:
 	while !_lines.is_empty():
 		if !_play_line(_lines.pop_front()):
-			break
+			return
+	SaveManager.end_event()
 
 # PRIVATE MEMBERS #
 

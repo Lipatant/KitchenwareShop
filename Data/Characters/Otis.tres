@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://bmmucxvbxfjwn"]
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://bmmucxvbxfjwn"]
 
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_nd0sr"]
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_rps71"]
 [ext_resource type="AudioStream" uid="uid://oiqicamsoptx" path="res://Sound/BGM/Otis.wav" id="2_548ui"]
+[ext_resource type="Resource" uid="uid://jcg5gqxyal2r" path="res://Data/Characters/Otis/OtisDay01.tres" id="2_cf3ed"]
 
 [resource]
 script = ExtResource("1_rps71")
 code = "Otis"
 theme = ExtResource("2_548ui")
+events = Array[ExtResource("1_nd0sr")]([ExtResource("2_cf3ed")])

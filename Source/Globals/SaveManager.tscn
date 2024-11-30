@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://s7av3ful2wnf"]
+[gd_scene load_steps=11 format=3 uid="uid://s7av3ful2wnf"]
 
 [ext_resource type="Script" path="res://Source/Globals/SaveManager/SaveManager.gd" id="1_8elts"]
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="2_epxwk"]
@@ -9,8 +9,10 @@
 [ext_resource type="Resource" uid="uid://bmmucxvbxfjwn" path="res://Data/Characters/Otis.tres" id="7_oyode"]
 [ext_resource type="Resource" uid="uid://rlu4rta6ltb1" path="res://Data/Characters/Pepe.tres" id="8_meyvb"]
 [ext_resource type="PackedScene" uid="uid://b1nldnorkv3ps" path="res://Source/Scenes/Dialogue.tscn" id="9_5h5su"]
+[ext_resource type="PackedScene" uid="uid://7e1xpiicaqv6" path="res://Source/Scenes/Choice.tscn" id="9_q5dv1"]
 
 [node name="SaveManager" type="Node"]
 script = ExtResource("1_8elts")
 _character_resources = Array[ExtResource("2_epxwk")]([ExtResource("3_rae83"), ExtResource("4_uwwlc"), ExtResource("5_py0cn"), ExtResource("6_fea1o"), ExtResource("7_oyode"), ExtResource("8_meyvb")])
+_choice_resource = ExtResource("9_q5dv1")
 _dialogue_resource = ExtResource("9_5h5su")

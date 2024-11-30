@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://dqxd0hqs06qo1"]
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://dqxd0hqs06qo1"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_pmv37"]
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_tpatm"]
 [ext_resource type="AudioStream" uid="uid://c53srejnetclk" path="res://Sound/BGM/Brioche.wav" id="2_ht1jn"]
+[ext_resource type="Resource" uid="uid://d2nqqwqngc6p2" path="res://Data/Characters/Brioche/BriocheDay01.tres" id="2_liu7p"]
 
 [resource]
 script = ExtResource("1_pmv37")
 code = "Brioche"
 theme = ExtResource("2_ht1jn")
+events = Array[ExtResource("1_tpatm")]([ExtResource("2_liu7p")])

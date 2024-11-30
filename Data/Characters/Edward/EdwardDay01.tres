@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="Event" load_steps=3 format=3 uid="uid://dw7dllt6hkllv"]
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://dw7dllt6hkllv"]
 
-[ext_resource type="Resource" uid="uid://bbc0da5rmo1ra" path="res://Data/Characters/Edward.tres" id="1_t448b"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="2_g4rg4"]
 
 [resource]
 script = ExtResource("2_g4rg4")
-character = ExtResource("1_t448b")
 code = "set_character_name_unknown
 say Edward0101
 say Edward0102

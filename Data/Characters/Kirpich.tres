@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://ddi5kg0d7wb1m"]
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://ddi5kg0d7wb1m"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_0tn3j"]
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_k8ut8"]
 [ext_resource type="AudioStream" uid="uid://cx5fwtijr6awp" path="res://Sound/BGM/Kirpich.wav" id="2_re5po"]
+[ext_resource type="Resource" uid="uid://bnj1u8sdkgice" path="res://Data/Characters/Kirpich/KirpichDay01.tres" id="2_well3"]
 
 [resource]
 script = ExtResource("1_0tn3j")
 code = "Kirpich"
 theme = ExtResource("2_re5po")
+events = Array[ExtResource("1_k8ut8")]([ExtResource("2_well3")])

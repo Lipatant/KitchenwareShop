@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://bbc0da5rmo1ra"]
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://bbc0da5rmo1ra"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_54q5j"]
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_uvje5"]
+[ext_resource type="Resource" uid="uid://dw7dllt6hkllv" path="res://Data/Characters/Edward/EdwardDay01.tres" id="2_6nmu1"]
 [ext_resource type="AudioStream" uid="uid://daor58b2qkh8m" path="res://Sound/BGM/Edward.wav" id="2_jlkgo"]
 
 [resource]
 script = ExtResource("1_54q5j")
 code = "Edward"
 theme = ExtResource("2_jlkgo")
+events = Array[ExtResource("1_uvje5")]([ExtResource("2_6nmu1")])

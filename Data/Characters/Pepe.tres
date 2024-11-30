@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Character" load_steps=3 format=3 uid="uid://rlu4rta6ltb1"]
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://rlu4rta6ltb1"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_6i7k1"]
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_xo53d"]
 [ext_resource type="AudioStream" uid="uid://c48btyavc6dow" path="res://Sound/BGM/Pepe.wav" id="2_55ia6"]
+[ext_resource type="Resource" uid="uid://dtkrl6ym12tw2" path="res://Data/Characters/Pepe/PepeDay01.tres" id="2_jhvoc"]
 
 [resource]
 script = ExtResource("1_6i7k1")
 code = "Pepe"
 theme = ExtResource("2_55ia6")
+events = Array[ExtResource("1_xo53d")]([ExtResource("2_jhvoc")])

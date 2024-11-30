@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://bnj1u8sdkgice"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="2_cnsiq"]
+
+[resource]
+script = ExtResource("2_cnsiq")
+code = "set_character_name_unknown
+say Edward0101
+say Edward0102
+say Edward0103
+say Edward0104
+set_character_name_self
+say Edward0105
+say Edward0106"
