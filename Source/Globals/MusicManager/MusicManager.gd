@@ -25,7 +25,6 @@ func _ready() -> void:
 	_audio_stream = %AudioStreamPlayer
 	_audio_stream_synchronized = _audio_stream.stream
 	_synchronize_audio_stream_synchronized()
-	print(_stream_identifiers)
 	play()
 	_audio_stream.play()
 
