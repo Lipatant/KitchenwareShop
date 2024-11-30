@@ -5,10 +5,10 @@
 [resource]
 script = ExtResource("2_qm8ir")
 code = "set_character_name_unknown
-say Edward0101
-say Edward0102
-say Edward0103
-say Edward0104
+say Brioche0101
+say Brioche0102
+say Brioche0103
+say Brioche0104
 set_character_name_self
-say Edward0105
-say Edward0106"
+say Brioche0105
+say Brioche0106"
