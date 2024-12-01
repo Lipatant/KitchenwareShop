@@ -4,11 +4,19 @@
 
 [resource]
 script = ExtResource("1_2u30o")
-code = "set_character_name_unknown
-say Edward0101
-say Edward0102
-say Edward0103
-say Edward0104
-set_character_name_self
-say Edward0105
-say Edward0106"
+code = "set_character_name_self
+say Kirpich0301 Neutral
+say Kirpich0302
+say GenericWait
+say Kirpich0303
+say Kirpich0304
+say Kirpich0305 Focused
+say Kirpich0306 Neutral
+say Kirpich0307
+say Kirpich0308
+say Kirpich0309 Happy
+say Kirpich0310 Neutral
+say Kirpich0311
+say Kirpich0312"
+choice_name = ""
+choices = Array[ExtResource("1_2u30o")]([])

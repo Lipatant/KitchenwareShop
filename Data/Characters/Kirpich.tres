@@ -1,12 +1,15 @@
-[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://ddi5kg0d7wb1m"]
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3 uid="uid://ddi5kg0d7wb1m"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_0tn3j"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_k8ut8"]
 [ext_resource type="AudioStream" uid="uid://cx5fwtijr6awp" path="res://Sound/BGM/Kirpich.wav" id="2_re5po"]
 [ext_resource type="Resource" uid="uid://bnj1u8sdkgice" path="res://Data/Characters/Kirpich/KirpichDay01.tres" id="2_well3"]
+[ext_resource type="Resource" uid="uid://da14btvidtqxt" path="res://Data/Characters/Kirpich/KirpichDay02.tres" id="3_bb2s6"]
+[ext_resource type="Resource" uid="uid://bffa8athp6ip2" path="res://Data/Characters/Kirpich/KirpichDay03.tres" id="4_skcw4"]
+[ext_resource type="Resource" uid="uid://cejfl3qv6r8pi" path="res://Data/Characters/Kirpich/KirpichDay04.tres" id="5_b4rtk"]
 
 [resource]
 script = ExtResource("1_0tn3j")
 code = "Kirpich"
 theme = ExtResource("2_re5po")
-events = Array[ExtResource("1_k8ut8")]([ExtResource("2_well3")])
+events = Array[ExtResource("1_k8ut8")]([ExtResource("2_well3"), ExtResource("3_bb2s6"), ExtResource("4_skcw4"), ExtResource("5_b4rtk")])

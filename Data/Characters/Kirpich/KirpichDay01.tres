@@ -4,11 +4,14 @@
 
 [resource]
 script = ExtResource("2_cnsiq")
-code = "set_character_name_unknown
-say Edward0101
-say Edward0102
-say Edward0103
-say Edward0104
+code = "say GenericWait
+say Kirpich0101 Terrified
+set_character_name_unknown
+say Kirpich0102 Neutral
+say Kirpich0103
+say Kirpich0104
 set_character_name_self
-say Edward0105
-say Edward0106"
+say Kirpich0105
+say Kirpich0106"
+choice_name = ""
+choices = Array[ExtResource("2_cnsiq")]([])

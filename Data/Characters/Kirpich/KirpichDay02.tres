@@ -1,14 +1,34 @@
-[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://da14btvidtqxt"]
+[gd_resource type="Resource" script_class="Event" load_steps=5 format=3 uid="uid://da14btvidtqxt"]
 
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_w7d5n"]
 
+[sub_resource type="Resource" id="Resource_ektf3"]
+script = ExtResource("1_w7d5n")
+code = "say Kirpich02Route0101 Neutral
+say GenericWait
+say Kirpich02Route0102 Embarrassed"
+choice_name = "Kirpich02Route01"
+choices = Array[ExtResource("1_w7d5n")]([])
+
+[sub_resource type="Resource" id="Resource_1mx61"]
+script = ExtResource("1_w7d5n")
+code = "say Kirpich02Route0201 Neutral
+say GenericWait
+say Kirpich02Route0202 Embarrassed"
+choice_name = "Kirpich02Route02"
+choices = Array[ExtResource("1_w7d5n")]([])
+
+[sub_resource type="Resource" id="Resource_7rdvp"]
+script = ExtResource("1_w7d5n")
+code = "say Kirpich02Route0301 Neutral
+say GenericWait
+say Kirpich02Route0302 Embarrassed"
+choice_name = "Kirpich02Route03"
+choices = Array[ExtResource("1_w7d5n")]([])
+
 [resource]
 script = ExtResource("1_w7d5n")
-code = "set_character_name_unknown
-say Edward0101
-say Edward0102
-say Edward0103
-say Edward0104
-set_character_name_self
-say Edward0105
-say Edward0106"
+code = "set_character_name_self
+say Kirpich0201 Neutral"
+choice_name = ""
+choices = Array[ExtResource("1_w7d5n")]([SubResource("Resource_ektf3"), SubResource("Resource_1mx61"), SubResource("Resource_7rdvp")])

@@ -1,14 +1,40 @@
-[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://cejfl3qv6r8pi"]
+[gd_resource type="Resource" script_class="Event" load_steps=6 format=3 uid="uid://cejfl3qv6r8pi"]
 
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_y14vr"]
 
+[sub_resource type="Resource" id="Resource_dxeq3"]
+script = ExtResource("1_y14vr")
+code = "say Kirpich04Route0101 Happy
+say Kirpich04Route0102 Neutral"
+choice_name = "Kirpich04Route01"
+choices = Array[ExtResource("1_y14vr")]([])
+
+[sub_resource type="Resource" id="Resource_v0c4g"]
+script = ExtResource("1_y14vr")
+code = "say Kirpich04Route0201 Neutral
+say Kirpich04Route0202"
+choice_name = "Kirpich04Route02"
+choices = Array[ExtResource("1_y14vr")]([])
+
+[sub_resource type="Resource" id="Resource_7kwvp"]
+script = ExtResource("1_y14vr")
+code = "say Kirpich04Route0301 Neutral
+say Kirpich04Route0302
+say Kirpich04Route0303 Happy"
+choice_name = "Kirpich04Route03"
+choices = Array[ExtResource("1_y14vr")]([])
+
+[sub_resource type="Resource" id="Resource_sw8cf"]
+script = ExtResource("1_y14vr")
+code = "say Kirpich04Route0401 Happy
+say Kirpich04Route0402 Neutral"
+choice_name = "Kirpich04Route04"
+choices = Array[ExtResource("1_y14vr")]([])
+
 [resource]
 script = ExtResource("1_y14vr")
-code = "set_character_name_unknown
-say Edward0101
-say Edward0102
-say Edward0103
-say Edward0104
-set_character_name_self
-say Edward0105
-say Edward0106"
+code = "set_character_name_self
+say Kirpich0401 Neutral
+say Kirpich0402"
+choice_name = ""
+choices = Array[ExtResource("1_y14vr")]([SubResource("Resource_dxeq3"), SubResource("Resource_v0c4g"), SubResource("Resource_7kwvp"), SubResource("Resource_sw8cf")])

@@ -1,15 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://s7av3ful2wnf"]
+[gd_scene load_steps=9 format=3 uid="uid://s7av3ful2wnf"]
 
 [ext_resource type="Script" path="res://Source/Globals/SaveManager/SaveManager.gd" id="1_8elts"]
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="2_epxwk"]
 [ext_resource type="Resource" uid="uid://dqxd0hqs06qo1" path="res://Data/Characters/Brioche.tres" id="3_rae83"]
 [ext_resource type="Resource" uid="uid://bbc0da5rmo1ra" path="res://Data/Characters/Edward.tres" id="4_uwwlc"]
 [ext_resource type="Resource" uid="uid://cif3bbu7tccwl" path="res://Data/Characters/Hector.tres" id="5_706ps"]
+[ext_resource type="Resource" uid="uid://ddi5kg0d7wb1m" path="res://Data/Characters/Kirpich.tres" id="6_qsr5d"]
 [ext_resource type="PackedScene" uid="uid://b1nldnorkv3ps" path="res://Source/Scenes/Dialogue.tscn" id="9_5h5su"]
 [ext_resource type="PackedScene" uid="uid://3876m577l7ii" path="res://Source/Scenes/Elimination.tscn" id="11_m24y7"]
 
 [node name="SaveManager" type="Node"]
 script = ExtResource("1_8elts")
-_character_resources = Array[ExtResource("2_epxwk")]([ExtResource("3_rae83"), ExtResource("4_uwwlc"), ExtResource("5_706ps")])
+_character_resources = Array[ExtResource("2_epxwk")]([ExtResource("3_rae83"), ExtResource("4_uwwlc"), ExtResource("5_706ps"), ExtResource("6_qsr5d")])
 _dialogue_resource = ExtResource("9_5h5su")
 _elimination_resource = ExtResource("11_m24y7")
