@@ -76,6 +76,21 @@ layout_mode = 2
 text = "PLACEHOLDER"
 horizontal_alignment = 1
 
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="SkipAllButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "DialogueSkipAllButton"
+
 [node name="Choice" type="ItemList" parent="."]
 unique_name_in_owner = true
 visible = false
@@ -96,4 +111,5 @@ auto_height = true
 
 [connection signal="speech_pressed" from="." to="." method="_on_speech_pressed"]
 [connection signal="gui_input" from="CharacterSpeechContainer" to="." method="_on_character_speech_container_gui_input"]
+[connection signal="pressed" from="VBoxContainer/SkipAllButton" to="." method="_on_skip_all_button_pressed"]
 [connection signal="item_activated" from="Choice" to="." method="_on_choice_item_activated"]

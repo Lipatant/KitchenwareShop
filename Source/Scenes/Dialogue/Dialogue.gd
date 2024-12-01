@@ -54,6 +54,9 @@ func _on_choice_item_activated(index: int) -> void:
 	%Choice.visible = false
 	play(_event.choices[index], _character)
 
+func _on_skip_all_button_pressed() -> void:
+	SaveManager.end_event()
+
 func _on_speech_pressed() -> void:
 	if !%CharacterSpeech.text:
 		return

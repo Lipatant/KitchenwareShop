@@ -281,5 +281,7 @@ CharacterSpeechKirpichElimination01,"Believe me, I'm very sad."
 
 CharacterSpeechGenericWait,"..."
 
+DialogueSkipAllButton,Skip All
+
 MainMenuStartButton,Start
 MainMenuLeaveButton,Leave
