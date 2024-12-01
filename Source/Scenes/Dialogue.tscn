@@ -126,10 +126,12 @@ grow_horizontal = 0
 
 [node name="MainMenuButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 16
 text = "DialogueMainMenuButton"
 
 [node name="SkipAllButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 16
 text = "DialogueSkipAllButton"
 
 [node name="Choice" type="ItemList" parent="."]

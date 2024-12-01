@@ -42,10 +42,12 @@ expand_mode = 3
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 16
 text = "MainMenuStartButton"
 
 [node name="LeaveButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 16
 text = "MainMenuLeaveButton"
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

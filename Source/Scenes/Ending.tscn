@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://8wgqwyc0wvli"]
+[gd_scene load_steps=6 format=3 uid="uid://8wgqwyc0wvli"]
 
 [ext_resource type="PackedScene" uid="uid://c4uhypoecgybf" path="res://Source/Backgrounds/BackgroundDefault.tscn" id="1_dk0ki"]
 [ext_resource type="Script" path="res://Source/Scenes/Ending/Ending.gd" id="1_dvrj4"]
 [ext_resource type="PackedScene" uid="uid://b70j1jgqjeodt" path="res://Source/Scenes/MainMenu.tscn" id="2_v1l23"]
 [ext_resource type="Texture2D" uid="uid://byodcef6j66po" path="res://Graphics/Backgrounds/BackgroundEnding.jpg" id="2_ympgc"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_2uq28"]
+color = Color(1, 1, 1, 1)
+thickness = 2
 
 [node name="Ending" type="Control"]
 layout_mode = 3
@@ -48,13 +52,17 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Control/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 16
 text = "EndingTitle"
 horizontal_alignment = 1
 
 [node name="CharacterName" type="Label" parent="Control/Panel/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/outline_size = 16
 theme_override_font_sizes/font_size = 32
+text = "CharacterName"
 horizontal_alignment = 1
 
 [node name="PanelContainer" type="PanelContainer" parent="Control"]
@@ -63,10 +71,10 @@ size_flags_vertical = 3
 
 [node name="MarginContainer" type="MarginContainer" parent="Control/PanelContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/PanelContainer/MarginContainer"]
 layout_mode = 2
@@ -75,22 +83,33 @@ theme_override_constants/separation = 10
 [node name="CharacterRecipe" type="Label" parent="Control/PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/outline_size = 16
 theme_override_font_sizes/font_size = 24
+text = "CharacterRecipe"
 horizontal_alignment = 1
 
+[node name="HSeparator" type="HSeparator" parent="Control/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_2uq28")
+
 [node name="ScrollContainer" type="ScrollContainer" parent="Control/PanelContainer/MarginContainer/VBoxContainer"]
+clip_contents = false
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="CharacterRecipeDescription" type="RichTextLabel" parent="Control/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer"]
 unique_name_in_owner = true
+clip_contents = false
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/outline_size = 16
 theme_override_font_sizes/normal_font_size = 18
+text = "CharacterRecipeDescription"
 fit_content = true
 
 [node name="MainMenuButton" type="Button" parent="Control"]
 layout_mode = 2
+theme_override_constants/outline_size = 16
 text = "EndingMainMenuButton"
 
 [connection signal="pressed" from="Control/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
