@@ -1,9 +1,46 @@
-[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://cjudel0ut8e4v"]
+[gd_resource type="Resource" script_class="Event" load_steps=6 format=3 uid="uid://cjudel0ut8e4v"]
 
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_h6w6q"]
 
+[sub_resource type="Resource" id="Resource_7f53t"]
+script = ExtResource("1_h6w6q")
+code = "say Edward04Route0101 Neutral
+say Edward04Route0102
+say Edward04Route0103"
+choice_name = "Edward04Route01"
+choices = Array[ExtResource("1_h6w6q")]([])
+
+[sub_resource type="Resource" id="Resource_4sdia"]
+script = ExtResource("1_h6w6q")
+code = "say Edward04Route0201 Neutral
+say Edward04Route0202
+say Edward04Route0203 Happy"
+choice_name = "Edward04Route02"
+choices = Array[ExtResource("1_h6w6q")]([])
+
+[sub_resource type="Resource" id="Resource_cijy4"]
+script = ExtResource("1_h6w6q")
+code = "say Edward04Route0301 Focused
+say Edward04Route0302 Happy
+say Edward04Route0303 Embarrassed"
+choice_name = "Edward04Route03"
+choices = Array[ExtResource("1_h6w6q")]([])
+
+[sub_resource type="Resource" id="Resource_tqcno"]
+script = ExtResource("1_h6w6q")
+code = "say Edward04Route0401 Happy
+say Edward04Route0402 Neutral
+say Edward04Route0403 Embarrassed
+say Edward04Route0404 Neutral"
+choice_name = "Edward04Route04"
+choices = Array[ExtResource("1_h6w6q")]([])
+
 [resource]
 script = ExtResource("1_h6w6q")
-code = ""
+code = "set_character_name_self
+say Edward0401 Neutral
+say Edward0402 Happy
+say Edward0403 Neutral
+say Edward0404 Focused"
 choice_name = ""
-choices = Array[ExtResource("1_h6w6q")]([])
+choices = Array[ExtResource("1_h6w6q")]([SubResource("Resource_7f53t"), SubResource("Resource_4sdia"), SubResource("Resource_cijy4"), SubResource("Resource_tqcno")])

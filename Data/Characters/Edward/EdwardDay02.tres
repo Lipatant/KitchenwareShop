@@ -1,7 +1,39 @@
-[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://btqb7b8lo57n1"]
+[gd_resource type="Resource" script_class="Event" load_steps=5 format=3 uid="uid://btqb7b8lo57n1"]
 
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_8ivm5"]
 
+[sub_resource type="Resource" id="Resource_0yo15"]
+script = ExtResource("1_8ivm5")
+code = "say Edward02Route0101 Happy
+say Edward02Route0102 Neutral
+say Edward02Route0103"
+choice_name = "Edward02Route01"
+choices = Array[ExtResource("1_8ivm5")]([])
+
+[sub_resource type="Resource" id="Resource_j8ira"]
+script = ExtResource("1_8ivm5")
+code = "say Edward02Route0201 Neutral
+say Edward02Route0202
+say Edward02Route0203 Focused
+say Edward02Route0204
+say Edward02Route0205 Happy"
+choice_name = "Edward02Route02"
+choices = Array[ExtResource("1_8ivm5")]([])
+
+[sub_resource type="Resource" id="Resource_1yvps"]
+script = ExtResource("1_8ivm5")
+code = "say Edward02Route0301 Neutral
+say Edward02Route0302"
+choice_name = "Edward02Route03"
+choices = Array[ExtResource("1_8ivm5")]([])
+
 [resource]
 script = ExtResource("1_8ivm5")
-code = ""
+code = "set_character_name_self
+say Edward0201 Neutral
+say Edward0202
+say Edward0203 Happy
+say Edward0204 Focused
+say Edward0205 Neutral"
+choice_name = ""
+choices = Array[ExtResource("1_8ivm5")]([SubResource("Resource_0yo15"), SubResource("Resource_j8ira"), SubResource("Resource_1yvps")])
