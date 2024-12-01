@@ -1,7 +1,37 @@
-[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://brflr1cxb4wv5"]
+[gd_resource type="Resource" script_class="Event" load_steps=5 format=3 uid="uid://brflr1cxb4wv5"]
 
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_4a6vy"]
 
+[sub_resource type="Resource" id="Resource_oygln"]
+script = ExtResource("1_4a6vy")
+code = "say Hector02Route0101 Neutral
+say Hector02Route0102 Happy"
+choice_name = "Hector02Route01"
+choices = Array[ExtResource("1_4a6vy")]([])
+
+[sub_resource type="Resource" id="Resource_7gora"]
+script = ExtResource("1_4a6vy")
+code = "say Hector02Route0201 Focused
+say Hector02Route0202 Neutral
+say Hector02Route0203 Embarrassed"
+choice_name = "Hector02Route02"
+choices = Array[ExtResource("1_4a6vy")]([])
+
+[sub_resource type="Resource" id="Resource_akl6b"]
+script = ExtResource("1_4a6vy")
+code = "say Hector02Route0301 Embarrassed
+say Hector02Route0302 Neutral
+say Hector02Route0303 Embarrassed"
+choice_name = "Hector02Route03"
+choices = Array[ExtResource("1_4a6vy")]([])
+
 [resource]
 script = ExtResource("1_4a6vy")
-code = ""
+code = "set_character_name_self
+say Hector0201 Happy
+say Hector0202 Neutral
+say Hector0203
+say Hector0204 Embarrassed
+say Hector0205 Neutral"
+choice_name = ""
+choices = Array[ExtResource("1_4a6vy")]([SubResource("Resource_oygln"), SubResource("Resource_7gora"), SubResource("Resource_akl6b")])

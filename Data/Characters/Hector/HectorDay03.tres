@@ -4,4 +4,22 @@
 
 [resource]
 script = ExtResource("1_ldtaw")
-code = ""
+code = "set_character_name_self
+say Hector0301 Happy
+say Hector0302 Neutral
+say Hector0303
+say Hector0304
+say Hector0305
+say Hector0306
+say Hector0307 Focused
+say Hector0308
+say Hector0309
+say Hector0310 Neutral
+say Hector0311 Sad
+say Hector0312 Neutral
+say GenericWait
+say Hector0313 Embarrassed
+say Hector0314 Happy
+say Hector0315 Neutral"
+choice_name = ""
+choices = Array[ExtResource("1_ldtaw")]([])

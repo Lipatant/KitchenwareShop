@@ -1,7 +1,59 @@
-[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://doff5mmm00g2f"]
+[gd_resource type="Resource" script_class="Event" load_steps=6 format=3 uid="uid://doff5mmm00g2f"]
 
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_47t2k"]
 
+[sub_resource type="Resource" id="Resource_41460"]
+script = ExtResource("1_47t2k")
+code = "say Hector04Route0101 Neutral
+say Hector04Route0102 Embarrassed
+say Hector04Route0103 Neutral
+say Hector04Route0104 Happy"
+choice_name = "Hector04Route01"
+choices = Array[ExtResource("1_47t2k")]([])
+
+[sub_resource type="Resource" id="Resource_hda77"]
+script = ExtResource("1_47t2k")
+code = "say Hector04Route0201 Happy
+say Hector04Route0202 Neutral
+say Hector04Route0203
+say Hector04Route0204
+say Hector04Route0205 Embarrassed
+say Hector04Route0206 Happy"
+choice_name = "Hector04Route02"
+choices = Array[ExtResource("1_47t2k")]([])
+
+[sub_resource type="Resource" id="Resource_e3d84"]
+script = ExtResource("1_47t2k")
+code = "say Hector04Route0301 Terrified
+say Hector04Route0302 Embarrassed
+say GenericWait
+say Hector04Route0303
+say Hector04Route0304 Neutral
+say Hector04Route0305"
+choice_name = "Hector04Route03"
+choices = Array[ExtResource("1_47t2k")]([])
+
+[sub_resource type="Resource" id="Resource_3uxcv"]
+script = ExtResource("1_47t2k")
+code = "say Hector04Route0401 Neutral
+say Hector04Route0402
+say Hector04Route0403
+say Hector04Route0404 Focused
+say Hector04Route0405 Neutral
+say GenericWait Embarrassed
+say Hector04Route0406
+say Hector04Route0407
+say Hector04Route0408"
+choice_name = "Hector04Route04"
+choices = Array[ExtResource("1_47t2k")]([])
+
 [resource]
 script = ExtResource("1_47t2k")
-code = ""
+code = "set_character_name_self
+say Hector0401 Happy
+say GenericWait Focused
+say Hector0402 Neutral
+say Hector0403
+say Hector0404"
+choice_name = ""
+choices = Array[ExtResource("1_47t2k")]([SubResource("Resource_41460"), SubResource("Resource_hda77"), SubResource("Resource_e3d84"), SubResource("Resource_3uxcv")])

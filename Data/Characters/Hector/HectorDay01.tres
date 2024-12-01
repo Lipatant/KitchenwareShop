@@ -4,4 +4,15 @@
 
 [resource]
 script = ExtResource("2_7l1vd")
-code = ""
+code = "set_character_name_unknown
+say Hector0101 Neutral
+say Hector0102
+say Hector0103
+say Hector0104 Focused
+say GenericWait
+say Hector0105 Neutral
+say Hector0106 Happy
+set_character_name_self
+say Hector0107 Neutral"
+choice_name = ""
+choices = Array[ExtResource("2_7l1vd")]([])
