@@ -13,7 +13,7 @@ config_version=5
 config/name="Kitchenware Shop"
 run/main_scene="res://Source/Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Graphics/Icon.png"
 
 [autoload]
 
