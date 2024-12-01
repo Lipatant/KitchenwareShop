@@ -5,6 +5,8 @@ extends Node
 @export var _character_resources : Array[Character]
 @export var _dialogue_resource : PackedScene
 @export var _elimination_resource : PackedScene
+@export var _intro_cutscene : Event
+@export var _intro_cutscene_character : Character
 
 # MEMBERS #
 
@@ -25,7 +27,10 @@ func eliminate_character(character: Character) -> void:
 
 func end_event() -> void:
 	if characters_remaining.is_empty():
-		SceneManager.change_scene_to_packed(_elimination_resource)
+		if characters.size() < 2:
+			SceneManager.change_scene_to_file("res://Source/Scenes/MainMenu.tscn")
+		else:
+			SceneManager.change_scene_to_packed(_elimination_resource)
 	else:
 		intertact_with_character(characters_remaining.front())
 
@@ -47,4 +52,9 @@ func start_next_day() -> void:
 	if characters_remaining.is_empty():
 		SceneManager.change_scene_to_file("res://Source/Scenes/MainMenu.tscn")
 	else:
-		intertact_with_character(characters_remaining.front())
+		if current_day == 1:
+			current_character = _intro_cutscene_character
+			current_event = _intro_cutscene
+			SceneManager.change_scene_to_packed(_dialogue_resource)
+		else:
+			intertact_with_character(characters_remaining.front())

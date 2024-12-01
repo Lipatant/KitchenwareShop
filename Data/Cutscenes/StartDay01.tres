@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://c6jns58pguvgy"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_dmd6n"]
+
+[resource]
+script = ExtResource("1_dmd6n")
+code = "set_character_name Player
+say ShopAssistant0101
+set_character_name_self
+say ShopAssistant0102
+set_character_name Player
+say ShopAssistant0103
+set_character_name_self
+say ShopAssistant0104
+set_character_name Player
+say ShopAssistant0105
+set_character_name_self
+say ShopAssistant0106
+set_character_name Player
+say ShopAssistant0107"
+choice_name = ""
+choices = Array[ExtResource("1_dmd6n")]([])

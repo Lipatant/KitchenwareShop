@@ -5,6 +5,8 @@ CharacterNameHector,Hector
 CharacterNameKirpich,Kirpich
 CharacterNameOtis,Otis
 CharacterNamePepe,Pepe
+CharacterNamePlayer,You
+CharacterNameShopAssistant,Shop Assistant
 CharacterNameUnknown,???
 
 CharacterSpeechBrioche0101,"WHO'S COMING?!?!"
@@ -277,9 +279,15 @@ CharacterSpeechKirpich04Route0402,"You won't be able to build a shelter with jus
 
 CharacterSpeechKirpichElimination01,"Believe me, I'm very sad."
 
-
-
 CharacterSpeechGenericWait,"..."
+
+CharacterSpeechShopAssistant0101,"Excuse me, I'm looking for some cookware. Do you know where I can find it?"
+CharacterSpeechShopAssistant0102,"Of course! What kind of gadgets are you looking for?"
+CharacterSpeechShopAssistant0103,"I don't know yet. I'm still hesitating. I'd just like to be able to diversify the cooking I do at home."
+CharacterSpeechShopAssistant0104,"Oh no problem, in that case, aisle 7 at the back of the shop. If you're still undecided, ask the products."
+CharacterSpeechShopAssistant0105,"What do you mean, ask the products?"
+CharacterSpeechShopAssistant0106,"You'll see on the spot."
+CharacterSpeechShopAssistant0107,"Ok? Well, thank you for your help."
 
 ChoiceChooseLabel,"Choose a character:"
 

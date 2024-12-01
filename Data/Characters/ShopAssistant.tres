@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Character" load_steps=4 format=3 uid="uid://btttrrk65ifr2"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_qcroe"]
+[ext_resource type="Script" path="res://Source/Data/Character.gd" id="2_qkaar"]
+[ext_resource type="AudioStream" uid="uid://c48btyavc6dow" path="res://Sound/BGM/Pepe.wav" id="3_cgruu"]
+
+[resource]
+script = ExtResource("2_qkaar")
+code = "ShopAssistant"
+theme = ExtResource("3_cgruu")
+events = Array[ExtResource("1_qcroe")]([])
