@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1nldnorkv3ps"]
+[gd_scene load_steps=3 format=3 uid="uid://b1nldnorkv3ps"]
 
 [ext_resource type="Script" path="res://Source/Scenes/Dialogue/Dialogue.gd" id="1_22gd5"]
+[ext_resource type="PackedScene" uid="uid://b70j1jgqjeodt" path="res://Source/Scenes/MainMenu.tscn" id="2_r6cwq"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -10,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_22gd5")
+main_menu_resource = ExtResource("2_r6cwq")
 
 [node name="EmotionContainer" type="PanelContainer" parent="."]
 unique_name_in_owner = true
@@ -77,6 +79,7 @@ text = "PLACEHOLDER"
 horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 1.0
@@ -86,6 +89,10 @@ offset_top = 10.0
 offset_right = -10.0
 offset_bottom = 40.0
 grow_horizontal = 0
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "DialogueMainMenuButton"
 
 [node name="SkipAllButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -111,5 +118,6 @@ auto_height = true
 
 [connection signal="speech_pressed" from="." to="." method="_on_speech_pressed"]
 [connection signal="gui_input" from="CharacterSpeechContainer" to="." method="_on_character_speech_container_gui_input"]
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/SkipAllButton" to="." method="_on_skip_all_button_pressed"]
 [connection signal="item_activated" from="Choice" to="." method="_on_choice_item_activated"]

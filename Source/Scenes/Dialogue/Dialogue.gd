@@ -1,5 +1,9 @@
 extends Node
 
+# EXPORTS #
+
+@export var main_menu_resource : PackedScene
+
 # MEMBERS #
 
 var _character : Character
@@ -56,6 +60,9 @@ func _on_choice_item_activated(index: int) -> void:
 
 func _on_skip_all_button_pressed() -> void:
 	SaveManager.end_event()
+
+func _on_main_menu_button_pressed() -> void:
+	SceneManager.change_scene_to_packed(main_menu_resource)
 
 func _on_speech_pressed() -> void:
 	if !%CharacterSpeech.text:
