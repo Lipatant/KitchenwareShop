@@ -13,4 +13,5 @@ func _on_leave_button_pressed() -> void:
 	SceneManager.quit()
 
 func _on_start_button_pressed() -> void:
+	SaveManager.reset()
 	SaveManager.start_next_day()

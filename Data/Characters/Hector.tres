@@ -1,12 +1,15 @@
-[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://cif3bbu7tccwl"]
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3 uid="uid://cif3bbu7tccwl"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_afqg8"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_hmshm"]
 [ext_resource type="AudioStream" uid="uid://c01mn51pygr0r" path="res://Sound/BGM/Hector.wav" id="2_m18ag"]
 [ext_resource type="Resource" uid="uid://ym878ynpltlq" path="res://Data/Characters/Hector/HectorDay01.tres" id="2_xm685"]
+[ext_resource type="Resource" uid="uid://brflr1cxb4wv5" path="res://Data/Characters/Hector/HectorDay02.tres" id="3_cd5ai"]
+[ext_resource type="Resource" uid="uid://bw1rvx5sfko5j" path="res://Data/Characters/Hector/HectorDay03.tres" id="4_q7v21"]
+[ext_resource type="Resource" uid="uid://doff5mmm00g2f" path="res://Data/Characters/Hector/HectorDay04.tres" id="5_v30xj"]
 
 [resource]
 script = ExtResource("1_afqg8")
 code = "Hector"
 theme = ExtResource("2_m18ag")
-events = Array[ExtResource("1_hmshm")]([ExtResource("2_xm685")])
+events = Array[ExtResource("1_hmshm")]([ExtResource("2_xm685"), ExtResource("3_cd5ai"), ExtResource("4_q7v21"), ExtResource("5_v30xj")])

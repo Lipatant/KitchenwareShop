@@ -1,12 +1,15 @@
-[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://bbc0da5rmo1ra"]
+[gd_resource type="Resource" script_class="Character" load_steps=8 format=3 uid="uid://bbc0da5rmo1ra"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_54q5j"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_uvje5"]
 [ext_resource type="Resource" uid="uid://dw7dllt6hkllv" path="res://Data/Characters/Edward/EdwardDay01.tres" id="2_6nmu1"]
 [ext_resource type="AudioStream" uid="uid://daor58b2qkh8m" path="res://Sound/BGM/Edward.wav" id="2_jlkgo"]
+[ext_resource type="Resource" uid="uid://btqb7b8lo57n1" path="res://Data/Characters/Edward/EdwardDay02.tres" id="3_bkhmb"]
+[ext_resource type="Resource" uid="uid://dawxd4ql6igwu" path="res://Data/Characters/Edward/EdwardDay03.tres" id="4_ikl33"]
+[ext_resource type="Resource" uid="uid://cjudel0ut8e4v" path="res://Data/Characters/Edward/EdwardDay04.tres" id="5_oeo54"]
 
 [resource]
 script = ExtResource("1_54q5j")
 code = "Edward"
 theme = ExtResource("2_jlkgo")
-events = Array[ExtResource("1_uvje5")]([ExtResource("2_6nmu1")])
+events = Array[ExtResource("1_uvje5")]([ExtResource("2_6nmu1"), ExtResource("3_bkhmb"), ExtResource("4_ikl33"), ExtResource("5_oeo54")])

@@ -3,7 +3,6 @@ extends Node
 # EXPORTS #
 
 @export var _character_resources : Array[Character]
-@export var _choice_resource : PackedScene
 @export var _dialogue_resource : PackedScene
 @export var _elimination_resource : PackedScene
 
@@ -28,7 +27,7 @@ func end_event() -> void:
 	if characters_remaining.is_empty():
 		SceneManager.change_scene_to_packed(_elimination_resource)
 	else:
-		SceneManager.change_scene_to_packed(_choice_resource)
+		intertact_with_character(characters_remaining.front())
 
 func intertact_with_character(character: Character) -> void:
 	var current_day_index : int = current_day - 1
@@ -45,4 +44,7 @@ func reset() -> void:
 func start_next_day() -> void:
 	current_day += 1
 	characters_remaining = characters.duplicate(false)
-	SceneManager.change_scene_to_packed(_choice_resource)
+	if characters_remaining.is_empty():
+		SceneManager.change_scene_to_file("res://Source/Scenes/MainMenu.tscn")
+	else:
+		intertact_with_character(characters_remaining.front())

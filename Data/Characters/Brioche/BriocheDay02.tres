@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="Event" load_steps=5 format=3 uid="uid://bvues2nom8nmh"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_fy23l"]
+
+[sub_resource type="Resource" id="Resource_h1mcy"]
+script = ExtResource("1_fy23l")
+code = "say Brioche02Route0101 Neutral
+say Brioche02Route0102 Happy"
+choice_name = "Brioche02Route01"
+choices = Array[ExtResource("1_fy23l")]([])
+
+[sub_resource type="Resource" id="Resource_k5lyl"]
+script = ExtResource("1_fy23l")
+code = "say Brioche02Route0201 Neutral
+say Brioche02Route0202 Happy"
+choice_name = "Brioche02Route02"
+choices = Array[ExtResource("1_fy23l")]([])
+
+[sub_resource type="Resource" id="Resource_2sq3p"]
+script = ExtResource("1_fy23l")
+code = "say Brioche02Route0301 Neutral
+say Brioche02Route0302 Happy"
+choice_name = "Brioche02Route03"
+choices = Array[ExtResource("1_fy23l")]([])
+
+[resource]
+script = ExtResource("1_fy23l")
+code = "set_character_name_self
+say Brioche0201 Terrified
+say Brioche0202 Crying
+say Brioche0203
+say Brioche0204 Neutral
+say Brioche0205"
+choice_name = ""
+choices = Array[ExtResource("1_fy23l")]([SubResource("Resource_h1mcy"), SubResource("Resource_k5lyl"), SubResource("Resource_2sq3p")])

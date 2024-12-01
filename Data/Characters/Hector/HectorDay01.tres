@@ -4,11 +4,4 @@
 
 [resource]
 script = ExtResource("2_7l1vd")
-code = "set_character_name_unknown
-say Edward0101
-say Edward0102
-say Edward0103
-say Edward0104
-set_character_name_self
-say Edward0105
-say Edward0106"
+code = ""

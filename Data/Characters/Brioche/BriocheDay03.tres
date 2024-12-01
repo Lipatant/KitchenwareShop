@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://jq0ucjkwp8d1"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_pb8fk"]
+
+[resource]
+script = ExtResource("1_pb8fk")
+code = "set_character_name_self
+say Brioche0301 Terrified
+say Brioche0302 Crying
+say Brioche0303
+say Brioche0304 Neutral
+say Brioche0305 Embarrassed
+say Brioche0306 Neutral
+say Brioche0307 Happy
+say Brioche0308 Sad"
+choice_name = ""
+choices = Array[ExtResource("1_pb8fk")]([])

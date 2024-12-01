@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://cjudel0ut8e4v"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_h6w6q"]
+
+[resource]
+script = ExtResource("1_h6w6q")
+code = ""
+choice_name = ""
+choices = Array[ExtResource("1_h6w6q")]([])

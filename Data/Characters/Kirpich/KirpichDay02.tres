@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://da14btvidtqxt"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_w7d5n"]
+
+[resource]
+script = ExtResource("1_w7d5n")
+code = "set_character_name_unknown
+say Edward0101
+say Edward0102
+say Edward0103
+say Edward0104
+set_character_name_self
+say Edward0105
+say Edward0106"

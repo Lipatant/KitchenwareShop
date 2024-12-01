@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://bw1rvx5sfko5j"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_ldtaw"]
+
+[resource]
+script = ExtResource("1_ldtaw")
+code = ""

@@ -6,9 +6,9 @@
 script = ExtResource("2_g4rg4")
 code = "set_character_name_unknown
 say Edward0101
+say GenericWait Focused
 say Edward0102
-say Edward0103
-say Edward0104
+say Edward0103 Neutral
 set_character_name_self
-say Edward0105
-say Edward0106"
+say Edward0104 Happy
+say Edward0105 Neutral"

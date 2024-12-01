@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Event" load_steps=6 format=3 uid="uid://dwt8835r3d4kq"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_jhyba"]
+
+[sub_resource type="Resource" id="Resource_hjfwp"]
+script = ExtResource("1_jhyba")
+code = "say Brioche04Route0101 Neutral
+say Brioche04Route0102 Happy
+say Brioche04Route0103 Neutral"
+choice_name = "Brioche04Route01"
+choices = Array[ExtResource("1_jhyba")]([])
+
+[sub_resource type="Resource" id="Resource_gs35e"]
+script = ExtResource("1_jhyba")
+code = "say Brioche04Route0201 Happy
+say Brioche04Route0202 Embarrassed"
+choice_name = "Brioche04Route02"
+choices = Array[ExtResource("1_jhyba")]([])
+
+[sub_resource type="Resource" id="Resource_0soeq"]
+script = ExtResource("1_jhyba")
+code = "say Brioche04Route0301 Sad
+say Brioche04Route0302 Embarrassed"
+choice_name = "Brioche04Route03"
+choices = Array[ExtResource("1_jhyba")]([])
+
+[sub_resource type="Resource" id="Resource_k14r8"]
+script = ExtResource("1_jhyba")
+code = "say Brioche04Route0301 Happy
+say Brioche04Route0302 Neutral
+say Brioche04Route0303 Embarrassed"
+choice_name = "Brioche04Route04"
+choices = Array[ExtResource("1_jhyba")]([])
+
+[resource]
+script = ExtResource("1_jhyba")
+code = "set_character_name_self
+say Brioche0401 Terrified
+say Brioche0402 Crying
+say GenericWait Focused
+say Brioche0403 Embarrassed
+say Brioche0404 Neutral"
+choice_name = ""
+choices = Array[ExtResource("1_jhyba")]([SubResource("Resource_hjfwp"), SubResource("Resource_gs35e"), SubResource("Resource_0soeq"), SubResource("Resource_k14r8")])

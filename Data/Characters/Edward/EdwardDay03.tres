@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Event" load_steps=2 format=3 uid="uid://dawxd4ql6igwu"]
+
+[ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_xhi5i"]
+
+[resource]
+script = ExtResource("1_xhi5i")
+code = ""
