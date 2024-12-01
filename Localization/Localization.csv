@@ -325,9 +325,9 @@ CharacterSpeechShopAssistant0105,"What do you mean, ask the products?"
 CharacterSpeechShopAssistant0106,"You'll see on the spot."
 CharacterSpeechShopAssistant0107,"Ok? Well, thank you for your help."
 
-ChoiceChooseLabel,"Choose a character:"
+ChoiceChooseLabel,"Choose a character"
 
-EliminationChooseLabel,"Eliminate a character:"
+EliminationChooseLabel,"Eliminate a character"
 
 EndingMainMenuButton,Main Menu
 EndingTitle,"You go home with"
