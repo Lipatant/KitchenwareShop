@@ -11,8 +11,10 @@ config_version=5
 [application]
 
 config/name="Kitchenware Shop"
+config/version="1.0.0"
 run/main_scene="res://Source/Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
+boot_splash/show_image=false
 config/icon="res://Graphics/Icon.png"
 
 [autoload]
