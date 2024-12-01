@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1nldnorkv3ps"]
+[gd_scene load_steps=4 format=3 uid="uid://b1nldnorkv3ps"]
 
 [ext_resource type="Script" path="res://Source/Scenes/Dialogue/Dialogue.gd" id="1_22gd5"]
 [ext_resource type="PackedScene" uid="uid://b70j1jgqjeodt" path="res://Source/Scenes/MainMenu.tscn" id="2_r6cwq"]
+[ext_resource type="PackedScene" uid="uid://c4uhypoecgybf" path="res://Source/Backgrounds/BackgroundDefault.tscn" id="3_lwxvj"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -12,6 +13,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_22gd5")
 main_menu_resource = ExtResource("2_r6cwq")
+
+[node name="BackgroundDefault" parent="." instance=ExtResource("3_lwxvj")]
+layout_mode = 1
 
 [node name="CharacterPortrait" type="TextureRect" parent="."]
 unique_name_in_owner = true

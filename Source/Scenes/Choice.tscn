@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://7e1xpiicaqv6"]
+[gd_scene load_steps=5 format=3 uid="uid://7e1xpiicaqv6"]
 
 [ext_resource type="Script" path="res://Source/Scenes/Choice/Choice.gd" id="1_nxf7m"]
 [ext_resource type="PackedScene" uid="uid://byfc2v06ox1qp" path="res://Source/Scenes/Choice/ChoiceElement.tscn" id="2_p4trh"]
+[ext_resource type="PackedScene" uid="uid://c4uhypoecgybf" path="res://Source/Backgrounds/BackgroundDefault.tscn" id="3_782e0"]
+[ext_resource type="Texture2D" uid="uid://b1d3omb7d1d3s" path="res://Graphics/Backgrounds/BackgroundChoice.jpg" id="4_je44u"]
 
 [node name="Choice" type="Control"]
 layout_mode = 3
@@ -12,6 +14,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nxf7m")
 _choice_element_resource = ExtResource("2_p4trh")
+
+[node name="BackgroundDefault" parent="." instance=ExtResource("3_782e0")]
+layout_mode = 1
+texture = ExtResource("4_je44u")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

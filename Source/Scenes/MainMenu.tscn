@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b70j1jgqjeodt"]
+[gd_scene load_steps=4 format=3 uid="uid://b70j1jgqjeodt"]
 
 [ext_resource type="Script" path="res://Source/Scenes/MainMenu/MainMenu.gd" id="1_7rcxe"]
 [ext_resource type="AudioStream" uid="uid://bkkk2bxvdykhu" path="res://Sound/BGM/Player.wav" id="2_x0sq8"]
+[ext_resource type="PackedScene" uid="uid://c4uhypoecgybf" path="res://Source/Backgrounds/BackgroundDefault.tscn" id="3_mv4py"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -12,6 +13,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7rcxe")
 music = ExtResource("2_x0sq8")
+
+[node name="BackgroundDefault" parent="." instance=ExtResource("3_mv4py")]
+layout_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(200, 200)
