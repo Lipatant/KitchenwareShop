@@ -52,19 +52,27 @@ horizontal_alignment = 1
 [node name="CharacterSpeechContainer" type="Panel" parent="."]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 1
-anchors_preset = 12
+anchors_preset = -1
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_default_cursor_shape = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CharacterSpeechContainer"]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 horizontal_scroll_mode = 0
@@ -80,9 +88,11 @@ fit_content = true
 
 [node name="CharacterNameContainer" type="PanelContainer" parent="CharacterSpeechContainer"]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 1
 anchors_preset = -1
 offset_left = 20.0
+offset_bottom = -10.0
 grow_vertical = 0
 
 [node name="CharacterName" type="Label" parent="CharacterSpeechContainer/CharacterNameContainer"]

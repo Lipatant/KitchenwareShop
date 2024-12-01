@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://7e1xpiicaqv6"]
+[gd_scene load_steps=3 format=3 uid="uid://7e1xpiicaqv6"]
 
 [ext_resource type="Script" path="res://Source/Scenes/Choice/Choice.gd" id="1_nxf7m"]
+[ext_resource type="PackedScene" uid="uid://byfc2v06ox1qp" path="res://Source/Scenes/Choice/ChoiceElement.tscn" id="2_p4trh"]
 
 [node name="Choice" type="Control"]
 layout_mode = 3
@@ -10,16 +11,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nxf7m")
+_choice_element_resource = ExtResource("2_p4trh")
 
-[node name="ItemList" type="ItemList" parent="."]
+[node name="ChoiceElementContainer" type="HBoxContainer" parent="."]
 unique_name_in_owner = true
 layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
+anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
-auto_height = true
-
-[connection signal="item_activated" from="ItemList" to="." method="_on_item_list_item_activated"]
+alignment = 1

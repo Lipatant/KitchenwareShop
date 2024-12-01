@@ -111,7 +111,6 @@ func set_emotion(emotion: String = "") -> bool:
 	var character_emotion := Character.Emotion.NEUTRAL
 	var emotion_formated : String = emotion.to_snake_case().to_upper()
 	var emotion_texture_name : String
-	var character_texture : Texture2D = null
 	if emotion_formated:
 		assert(Character.Emotion.has(emotion_formated))
 		character_emotion = Character.Emotion.get(emotion_formated)
