@@ -5,6 +5,7 @@ extends Node
 @export var _character_resources : Array[Character]
 @export var _dialogue_resource : PackedScene
 @export var _elimination_resource : PackedScene
+@export var _ending_resource : PackedScene
 @export var _intro_cutscene : Event
 @export var _intro_cutscene_character : Character
 
@@ -28,7 +29,7 @@ func eliminate_character(character: Character) -> void:
 func end_event() -> void:
 	if characters_remaining.is_empty():
 		if characters.size() < 2:
-			SceneManager.change_scene_to_file("res://Source/Scenes/MainMenu.tscn")
+			SceneManager.change_scene_to_packed(_ending_resource)
 		else:
 			SceneManager.change_scene_to_packed(_elimination_resource)
 	else:

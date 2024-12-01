@@ -9,6 +9,42 @@ CharacterNamePlayer,You
 CharacterNameShopAssistant,Shop Assistant
 CharacterNameUnknown,???
 
+CharacterRecipeBrioche,"Recipe for Onion Soup"
+CharacterRecipeBriocheDescription,"Peel and chop an onion.
+Sauté in a mixture of 12g butter and a tablespoon of oil.
+Sprinkle with flour and add a little hot water and white wine.
+Season with salt and pepper.
+Cover and boil gently for 20 minutes.
+Toast the bread in a toaster.
+Place the bread in a bowl.
+Sprinkle with grated cheese.
+Pour the soup over it.
+Sprinkle with more cheese and bake au gratin again."
+
+CharacterRecipeEdward,"Recipe for chicken curry"
+CharacterRecipeEdwardDescription,"Cut a chicken breast into pieces.
+Heat the chicken and onion pieces in a frying pan.
+Add the curry powder.
+Lower the heat and add the cream.
+Serve with rice or pasta."
+
+CharacterRecipeHector,"Recipe for homemade butter"
+CharacterRecipeHectorDescription,"Pour 25cl of cream into a bowl.
+Using an electric whisk, beat the cream.
+Continue beating until you have a paste-like cream.
+Place the cream in a jam jar and shake.
+After shaking for a few minutes, separate the liquid from the solid.
+Wash the butter in cold water."
+
+CharacterRecipeKirpich,"Recipe for goat's cheese and honey brik pastry"
+CharacterRecipeKirpichDescription,"
+Preheat your oven to 150°C.
+Brush the equivalent of two spoonfuls of honey all over the surface of your brik pastry sheets.
+Add the rosemary and goat's cheese.
+Fold your sheets.
+Place in a dish and put in the oven for 4 minutes.
+Turn over, then put back in the oven for a further 4 minutes."
+
 CharacterSpeechBrioche0101,"WHO'S COMING?!?!"
 CharacterSpeechBrioche0102,"HAAAAAAAAAAAAAAAAAAAAAAAAA!!!"
 CharacterSpeechBrioche0103,"What what who what what what!!!"
@@ -292,6 +328,9 @@ CharacterSpeechShopAssistant0107,"Ok? Well, thank you for your help."
 ChoiceChooseLabel,"Choose a character:"
 
 EliminationChooseLabel,"Eliminate a character:"
+
+EndingMainMenuButton,Main Menu
+EndingTitle,"You go home with"
 
 DialogueSkipAllButton,Skip All
 DialogueMainMenuButton,Main Menu
