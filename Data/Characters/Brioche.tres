@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Character" load_steps=8 format=3 uid="uid://dqxd0hqs06qo1"]
+[gd_resource type="Resource" script_class="Character" load_steps=16 format=3 uid="uid://dqxd0hqs06qo1"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_pmv37"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_tpatm"]
@@ -7,9 +7,25 @@
 [ext_resource type="Resource" uid="uid://bvues2nom8nmh" path="res://Data/Characters/Brioche/BriocheDay02.tres" id="3_xvaee"]
 [ext_resource type="Resource" uid="uid://jq0ucjkwp8d1" path="res://Data/Characters/Brioche/BriocheDay03.tres" id="4_vgpg7"]
 [ext_resource type="Resource" uid="uid://dwt8835r3d4kq" path="res://Data/Characters/Brioche/BriocheDay04.tres" id="5_a26aw"]
+[ext_resource type="Texture2D" uid="uid://cio3qd14vrycf" path="res://Graphics/Characters/Brioche - Crying.png" id="7_h0s3h"]
+[ext_resource type="Texture2D" uid="uid://btwx7fqstsyhe" path="res://Graphics/Characters/Brioche - Embarrassed.png" id="8_q2458"]
+[ext_resource type="Texture2D" uid="uid://btxdibowvrdqa" path="res://Graphics/Characters/Brioche - Focused.png" id="9_xlliv"]
+[ext_resource type="Texture2D" uid="uid://bv80aic1a7ck" path="res://Graphics/Characters/Brioche - Happy.png" id="10_x0fhc"]
+[ext_resource type="Texture2D" uid="uid://sv6u2q83uvet" path="res://Graphics/Characters/Brioche - Neutral.png" id="11_12if2"]
+[ext_resource type="Texture2D" uid="uid://bl8ov1ihasjeo" path="res://Graphics/Characters/Brioche - Sad.png" id="12_ybbsd"]
+[ext_resource type="Texture2D" uid="uid://dhvo3n2rxhd1f" path="res://Graphics/Characters/Brioche - Scared.png" id="13_kfvep"]
+[ext_resource type="Texture2D" uid="uid://cfoipa7r7h6q2" path="res://Graphics/Characters/Brioche - Terrified.png" id="14_uow77"]
 
 [resource]
 script = ExtResource("1_pmv37")
 code = "Brioche"
 theme = ExtResource("2_ht1jn")
+texture_crying = ExtResource("7_h0s3h")
+texture_embarrassed = ExtResource("8_q2458")
+texture_focused = ExtResource("9_xlliv")
+texture_happy = ExtResource("10_x0fhc")
+texture_neutral = ExtResource("11_12if2")
+texture_sad = ExtResource("12_ybbsd")
+texture_scared = ExtResource("13_kfvep")
+texture_terrified = ExtResource("14_uow77")
 events = Array[ExtResource("1_tpatm")]([ExtResource("2_liu7p"), ExtResource("3_xvaee"), ExtResource("4_vgpg7"), ExtResource("5_a26aw")])

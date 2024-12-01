@@ -13,6 +13,20 @@ grow_vertical = 2
 script = ExtResource("1_22gd5")
 main_menu_resource = ExtResource("2_r6cwq")
 
+[node name="CharacterPortrait" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -387.0
+offset_right = 387.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 2
+stretch_mode = 5
+
 [node name="EmotionContainer" type="PanelContainer" parent="."]
 unique_name_in_owner = true
 layout_mode = 1

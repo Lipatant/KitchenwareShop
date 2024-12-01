@@ -29,6 +29,7 @@ func play(event: Event, character: Character = null) -> void:
 	_event = event
 	_lines = event.code.split("\n", false)
 	_wait_for_choice = !event.choices.is_empty()
+	set_emotion()
 	MusicManager.play(_character.theme)
 	play_next()
 
@@ -107,12 +108,25 @@ func set_character_name_unknown() -> bool:
 	return set_character_name("Unknown")
 
 func set_emotion(emotion: String = "") -> bool:
-	var emotion_formated : String = emotion.to_snake_case().to_upper()
 	var character_emotion := Character.Emotion.NEUTRAL
+	var emotion_formated : String = emotion.to_snake_case().to_upper()
+	var emotion_texture_name : String
+	var character_texture : Texture2D = null
 	if emotion_formated:
 		assert(Character.Emotion.has(emotion_formated))
 		character_emotion = Character.Emotion.get(emotion_formated)
 	else:
 		emotion_formated = Character.Emotion.find_key(character_emotion)
 	%Emotion.text = emotion_formated
+	emotion_texture_name = "texture_" + emotion_formated.to_snake_case()
+	if _character and emotion_texture_name in _character:
+		%CharacterPortrait.texture = _character[emotion_texture_name]
+	else:
+		%CharacterPortrait.texture = null
+	if %CharacterPortrait.texture:
+		%CharacterPortrait.visible = true
+		%EmotionContainer.visible = false
+	else:
+		%CharacterPortrait.visible = false
+		%EmotionContainer.visible = true
 	return true

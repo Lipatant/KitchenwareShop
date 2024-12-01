@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Character" load_steps=8 format=3 uid="uid://cif3bbu7tccwl"]
+[gd_resource type="Resource" script_class="Character" load_steps=16 format=3 uid="uid://cif3bbu7tccwl"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_afqg8"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_hmshm"]
@@ -7,9 +7,25 @@
 [ext_resource type="Resource" uid="uid://brflr1cxb4wv5" path="res://Data/Characters/Hector/HectorDay02.tres" id="3_cd5ai"]
 [ext_resource type="Resource" uid="uid://bw1rvx5sfko5j" path="res://Data/Characters/Hector/HectorDay03.tres" id="4_q7v21"]
 [ext_resource type="Resource" uid="uid://doff5mmm00g2f" path="res://Data/Characters/Hector/HectorDay04.tres" id="5_v30xj"]
+[ext_resource type="Texture2D" uid="uid://ccvgb5squu4ws" path="res://Graphics/Characters/Hector - Crying.png" id="7_nqfrl"]
+[ext_resource type="Texture2D" uid="uid://c26un14bj071k" path="res://Graphics/Characters/Hector - Embarrassed.png" id="8_ic81v"]
+[ext_resource type="Texture2D" uid="uid://bxmlecn5tgbce" path="res://Graphics/Characters/Hector - Focused.png" id="9_rl162"]
+[ext_resource type="Texture2D" uid="uid://cpd4ooof4ojkh" path="res://Graphics/Characters/Hector - Happy.png" id="10_qajbk"]
+[ext_resource type="Texture2D" uid="uid://dmplsbhwsxtd4" path="res://Graphics/Characters/Hector - Neutral.png" id="11_mhqva"]
+[ext_resource type="Texture2D" uid="uid://dt7rk6lqypjal" path="res://Graphics/Characters/Hector - Sad.png" id="12_sndft"]
+[ext_resource type="Texture2D" uid="uid://bfymco42p6ptv" path="res://Graphics/Characters/Hector - Scared.png" id="13_e70fy"]
+[ext_resource type="Texture2D" uid="uid://dvy3j2lyor5t2" path="res://Graphics/Characters/Hector - Terrified.png" id="14_lxnui"]
 
 [resource]
 script = ExtResource("1_afqg8")
 code = "Hector"
 theme = ExtResource("2_m18ag")
+texture_crying = ExtResource("7_nqfrl")
+texture_embarrassed = ExtResource("8_ic81v")
+texture_focused = ExtResource("9_rl162")
+texture_happy = ExtResource("10_qajbk")
+texture_neutral = ExtResource("11_mhqva")
+texture_sad = ExtResource("12_sndft")
+texture_scared = ExtResource("13_e70fy")
+texture_terrified = ExtResource("14_lxnui")
 events = Array[ExtResource("1_hmshm")]([ExtResource("2_xm685"), ExtResource("3_cd5ai"), ExtResource("4_q7v21"), ExtResource("5_v30xj")])

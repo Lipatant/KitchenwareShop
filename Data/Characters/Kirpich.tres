@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Character" load_steps=8 format=3 uid="uid://ddi5kg0d7wb1m"]
+[gd_resource type="Resource" script_class="Character" load_steps=16 format=3 uid="uid://ddi5kg0d7wb1m"]
 
 [ext_resource type="Script" path="res://Source/Data/Character.gd" id="1_0tn3j"]
 [ext_resource type="Script" path="res://Source/Data/Event.gd" id="1_k8ut8"]
@@ -7,9 +7,25 @@
 [ext_resource type="Resource" uid="uid://da14btvidtqxt" path="res://Data/Characters/Kirpich/KirpichDay02.tres" id="3_bb2s6"]
 [ext_resource type="Resource" uid="uid://bffa8athp6ip2" path="res://Data/Characters/Kirpich/KirpichDay03.tres" id="4_skcw4"]
 [ext_resource type="Resource" uid="uid://cejfl3qv6r8pi" path="res://Data/Characters/Kirpich/KirpichDay04.tres" id="5_b4rtk"]
+[ext_resource type="Texture2D" uid="uid://c0mgisycxsn3g" path="res://Graphics/Characters/Kirpich - Crying.png" id="7_s12ns"]
+[ext_resource type="Texture2D" uid="uid://caidemow6b7kq" path="res://Graphics/Characters/Kirpich - Embarrassed.png" id="8_8utp7"]
+[ext_resource type="Texture2D" uid="uid://d4dj3psso1em6" path="res://Graphics/Characters/Kirpich - Focused.png" id="9_h66s8"]
+[ext_resource type="Texture2D" uid="uid://dw5hrm1htvtq2" path="res://Graphics/Characters/Kirpich - Happy.png" id="10_npvk2"]
+[ext_resource type="Texture2D" uid="uid://c663bdh70kxbq" path="res://Graphics/Characters/Kirpich - Neutral.png" id="11_kduyu"]
+[ext_resource type="Texture2D" uid="uid://btss7ycnmn1ca" path="res://Graphics/Characters/Kirpich - Sad.png" id="12_tu1yg"]
+[ext_resource type="Texture2D" uid="uid://byy2yfckmof4a" path="res://Graphics/Characters/Kirpich - Scared.png" id="13_cltlu"]
+[ext_resource type="Texture2D" uid="uid://cq020lphyg36c" path="res://Graphics/Characters/Kirpich - Terrified.png" id="14_m67br"]
 
 [resource]
 script = ExtResource("1_0tn3j")
 code = "Kirpich"
 theme = ExtResource("2_re5po")
+texture_crying = ExtResource("7_s12ns")
+texture_embarrassed = ExtResource("8_8utp7")
+texture_focused = ExtResource("9_h66s8")
+texture_happy = ExtResource("10_npvk2")
+texture_neutral = ExtResource("11_kduyu")
+texture_sad = ExtResource("12_tu1yg")
+texture_scared = ExtResource("13_cltlu")
+texture_terrified = ExtResource("14_m67br")
 events = Array[ExtResource("1_k8ut8")]([ExtResource("2_well3"), ExtResource("3_bb2s6"), ExtResource("4_skcw4"), ExtResource("5_b4rtk")])
