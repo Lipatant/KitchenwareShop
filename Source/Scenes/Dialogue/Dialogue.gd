@@ -3,8 +3,10 @@ extends Node
 # MEMBERS #
 
 var _character : Character
+var _event : Event
 var _lines : Array
 var _speech_tween : Tween
+var _wait_for_choice : bool
 
 # SIGNALS #
 
@@ -19,8 +21,10 @@ func _ready() -> void:
 	play(SaveManager.current_event, SaveManager.current_character)
 
 func play(event: Event, character: Character = null) -> void:
-	_lines = event.code.split("\n", false)
 	_character = character
+	_event = event
+	_lines = event.code.split("\n", false)
+	_wait_for_choice = !event.choices.is_empty()
 	MusicManager.play(_character.theme)
 	play_next()
 
@@ -28,7 +32,13 @@ func play_next() -> void:
 	while !_lines.is_empty():
 		if !_play_line(_lines.pop_front()):
 			return
-	SaveManager.end_event()
+	if _wait_for_choice:
+		_wait_for_choice = false
+		for choice : Event in _event.choices:
+			%Choice.add_item("CharacterSpeech" + choice.choice_name)
+		%Choice.visible = true
+	else:
+		SaveManager.end_event()
 
 # PRIVATE MEMBERS #
 
@@ -40,13 +50,17 @@ func _on_character_speech_container_gui_input(event: InputEvent) -> void:
 		if event.pressed:
 			speech_pressed.emit()
 
+func _on_choice_item_activated(index: int) -> void:
+	%Choice.visible = false
+	play(_event.choices[index], _character)
+
 func _on_speech_pressed() -> void:
 	if !%CharacterSpeech.text:
 		return
 	if _speech_tween and _speech_tween.is_running():
 		_speech_tween.stop()
 		%CharacterSpeech.visible_characters = %CharacterSpeech.text.length()
-	else:
+	elif !%Choice.visible:
 		play_next()
 
 func _play_line(line: String) -> bool:

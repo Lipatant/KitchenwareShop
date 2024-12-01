@@ -12,3 +12,5 @@ say Edward0103 Neutral
 set_character_name_self
 say Edward0104 Happy
 say Edward0105 Neutral"
+choice_name = ""
+choices = Array[ExtResource("2_g4rg4")]([])
