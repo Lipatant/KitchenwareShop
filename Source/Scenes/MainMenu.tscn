@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b70j1jgqjeodt"]
+[gd_scene load_steps=5 format=3 uid="uid://b70j1jgqjeodt"]
 
 [ext_resource type="Script" path="res://Source/Scenes/MainMenu/MainMenu.gd" id="1_7rcxe"]
 [ext_resource type="AudioStream" uid="uid://bkkk2bxvdykhu" path="res://Sound/BGM/Player.wav" id="2_x0sq8"]
 [ext_resource type="PackedScene" uid="uid://c4uhypoecgybf" path="res://Source/Backgrounds/BackgroundDefault.tscn" id="3_mv4py"]
+[ext_resource type="Texture2D" uid="uid://rh8win6c2yh3" path="res://Graphics/Logo.png" id="4_eis2n"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -32,6 +33,12 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("4_eis2n")
+expand_mode = 3
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
