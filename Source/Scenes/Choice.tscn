@@ -13,8 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_nxf7m")
 _choice_element_resource = ExtResource("2_p4trh")
 
-[node name="ChoiceElementContainer" type="HBoxContainer" parent="."]
-unique_name_in_owner = true
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -25,4 +24,25 @@ offset_right = -10.0
 offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+text = "ChoiceChooseLabel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChoiceElementContainer" type="HBoxContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
 alignment = 1

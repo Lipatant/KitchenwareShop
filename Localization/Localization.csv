@@ -281,6 +281,10 @@ CharacterSpeechKirpichElimination01,"Believe me, I'm very sad."
 
 CharacterSpeechGenericWait,"..."
 
+ChoiceChooseLabel,"Choose a character:"
+
+EliminationChooseLabel,"Eliminate a character:"
+
 DialogueSkipAllButton,Skip All
 DialogueMainMenuButton,Main Menu
 
