@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_dmd6n")
 code = "set_character_name Player
-say ShopAssistant0101
+say ShopAssistant0101 Neutral
 set_character_name_self
 say ShopAssistant0102
 set_character_name Player
@@ -15,7 +15,7 @@ say ShopAssistant0104
 set_character_name Player
 say ShopAssistant0105
 set_character_name_self
-say ShopAssistant0106
+say ShopAssistant0106 Happy
 set_character_name Player
 say ShopAssistant0107"
 choice_name = ""
